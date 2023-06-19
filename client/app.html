@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Attack Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<br>
+<br>
+<h1> HEART ATTACK PREDICTOR</h1>
+<form class="form"> 
+    <hr>  
+    <br>
+	<h2>Age</h2>
+    <div>
+        <input class="gen"  type="text" id="uiAge" class="floatLabel" name="AGE" value="30">
+    </div>
+    <h2>SEX</h2>
+	<div>
+        <select class="dropping" name="" id="uiSex">
+            <option value="" disabled="disabled" selected="selected">Choose an option</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+    </div>
+    <h2>Exercise Induced Angina</h2>
+    <div>
+        <select class="dropping" name="" id="uiExang">
+            <option value="" disabled="disabled" selected="selected">Choose an option</option>
+            <option>No</option>
+            <option>Yes</option>
+        </select>
+    </div>
+    <h2>Number of Major Vessels</h2>
+    <div>
+		<select class="dropping" name="" id="uiCaa">
+            <option value="" disabled="disabled" selected="selected">Choose an option</option>
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <h2>Resting Blood Pressure (in mm/Hg)</h2>
+    <div>
+        <input class="gen"  type="text" id="uiTrtbps" class="floatLabel" name="TRTBPS" value="250">
+    </div>
+    <h2>Cholesterol (in mg/dl)</h2>
+    <div>
+        <input class="gen"  type="text" id="uiChol" class="floatLabel" name="CHOL" value="200">
+    </div>
+    <h2>Maximum heart rate achieved</h2>
+    <div>
+        <input class="gen"  type="text" id="uiThalachh" class="floatLabel" name="THALACHH" value="150">
+    </div>
+    <h2>Depression of the ST slope </h2>
+    <div>
+        <input class="gen"  type="text" id="uiOldpeak" class="floatLabel" name="OLDPEAK" value="1.5">
+    </div>
+</form>
+<form class="form">
+    <h2>Chest Pain Type</h2>
+    <div>
+        <select class="dropping" name="" id="uiChestPain">
+        <option value="" disabled="disabled" selected="selected">Choose a Chest Pain type</option>
+        <option>Type 1: Typical Angina</option>
+        <option>Type 2: Atypical Angina</option>
+        <option>Type 3: Non-anginal Pain</option>
+        <option>Type 4: Asymptomatic Angina</option>
+        </select>
+	</div>
+	<h2>Slope of the ST peak exercise</h2>
+	<div>
+        <select class="dropping" name="" id="uiSLP">
+        <option value="" disabled="disabled" selected="selected">Choose a Slope</option>
+		<option>Type 1: Elevation in slope </option>
+        <option>Type 2: Flat / Parallel / Constant slope</option>
+        <option>Type 3: Depression of slope</option>
+        </select>
+    </div>
+	<button class="submit" onclick="onClickedPredict()" type="button">PREDICT</button>
+	<div id="uiPredict" class="result">	<h2></h2> </div>
+    <br>
+    <br>
+</form>
+</body>
+</html>

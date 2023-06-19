@@ -1,0 +1,2 @@
+The server folder contains the backend code necessary for prediction and model loading purposes.
+To view the code for server.py and util.py, open it in PyCharm Community Edition (preferably) or VSCode or Python.
